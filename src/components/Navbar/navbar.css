@@ -19,7 +19,7 @@
 
   background: white;
 
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
   position: sticky;
   top: 0;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-/* LINKS */
+/* NAV LINKS */
 
 .nav-links {
   display: flex;
@@ -53,7 +53,20 @@
   color: #0f766e;
 }
 
-/* DESKTOP BUTTON */
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RIGHT SIDE */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BOOK NOW BUTTON */
 
 .desktop-btn {
   border: none;
@@ -76,13 +89,7 @@
   background: #115e59;
 }
 
-/* MOBILE BUTTON */
-
-.mobile-btn {
-  display: none;
-}
-
-/* HAMBURGER */
+/* MENU ICON */
 
 .menu-icon {
   display: none;
@@ -93,7 +100,6 @@
 /* TABLET */
 
 @media (max-width: 992px) {
-
   .navbar {
     padding: 0 30px;
   }
@@ -101,15 +107,20 @@
   .nav-links {
     gap: 20px;
   }
-
 }
 
 /* MOBILE */
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
 
   .desktop-btn {
-    display: none;
+    display: block;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    text-decoration: none;
   }
 
   .menu-icon {
@@ -135,30 +146,44 @@
     text-align: center;
 
     transition: 0.4s ease;
+    text-decoration: none;
   }
 
   .nav-links.active {
     left: 0;
   }
 
-  .mobile-btn {
-    display: inline-block;
+  .logo {
+    font-size: 1.8rem;
+  }
+}
 
-    border: none;
+/* SMALL MOBILE */
 
-    padding: 12px 24px;
-
-    background: #0f766e;
-
-    color: white;
-
-    border-radius: 8px;
-
-    cursor: pointer;
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 15px;
   }
 
-}
-.nav-links a {
-  text-decoration: none;
-  color: inherit;
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .desktop-btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .menu-icon {
+    font-size: 1.6rem;
+  }
+
+  .nav-actions {
+    gap: 10px;
+
+  }
+  .nav-actions a {
+   text-decoration: none;
+    
+  }
 }

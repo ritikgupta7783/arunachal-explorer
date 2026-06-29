@@ -9,48 +9,46 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <div className="logo">
-        TravelGo
-      </div>
+      <div className="logo">TravelGo</div>
 
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-  <li>
-    <a href="#hero">Home</a>
-  </li>
+        <li onClick={closeMenu}>
+          <a href="#hero">Home</a>
+        </li>
 
-  <li>
-    <a href="#destinations">Destinations</a>
-  </li>
+        <li onClick={closeMenu}>
+          <a href="#destinations">Destinations</a>
+        </li>
 
-  <li>
-    <a href="#journey">Itinerary</a>
-  </li>
+        <li onClick={closeMenu}>
+          <a href="#journey">Itinerary</a>
+        </li>
 
-  <li>
-    <a href="#about">About</a>
-  </li>
+        <li onClick={closeMenu}>
+          <a href="#about">About</a>
+        </li>
 
-  <li>
-    <a href="#contact">Contact</a>
-  </li>
+        <li onClick={closeMenu}>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
 
-  <a href="#contact">
-  <button className="mobile-btn">
-    Book Now
-  </button>
-</a>
-</ul>
+      <div className="nav-actions">
+        <a href="#contact">
+          <button className="desktop-btn">
+            Book Now
+          </button>
+        </a>
 
-      <a href="#contact">
-  <button className="desktop-btn">
-    Book Now
-  </button>
-</a>
-
-      <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <FaBars />}
+        <div className="menu-icon" onClick={toggleMenu}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
       </div>
     </nav>
   );

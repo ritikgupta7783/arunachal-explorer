@@ -84,18 +84,25 @@
   color: rgba(255,255,255,0.95);
 }
 
-.hero-buttons {
-  display: flex;
-
-  justify-content: center;
-
-  gap: 20px;
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
+.primary-btn,
+.secondary-btn{
+    width: 180px;
+    height: 55px;
+    font-size: 1rem;
+    border-radius: 12px;
+}
 .primary-btn {
   border: none;
 
   background: #0f766e;
+  margin-right: 20px;
 
   color: white;
 
@@ -164,13 +171,15 @@
     font-size: 1rem;
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+   .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 
-  .primary-btn,
-  .secondary-btn {
-    width: 220px;
-  }
+    .primary-btn,
+    .secondary-btn{
+        width: 180px;
+        height: 50px;
+    }
 }

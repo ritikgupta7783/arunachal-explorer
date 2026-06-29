@@ -26,7 +26,7 @@ function Hero() {
         <a href="#destinations">
           <button className="primary-btn">Explore Tours</button>
         </a>
-
+       
         <a href="#contact">
           <button className="secondary-btn">Contact Us</button>
         </a>
