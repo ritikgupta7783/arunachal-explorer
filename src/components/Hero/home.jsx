@@ -13,28 +13,23 @@ function Hero() {
       <div className="overlay"></div>
 
       <div className="hero-content">
-        <span className="hero-tag">
-          Explore Northeast India
-        </span>
+        <span className="hero-tag">Explore Northeast India</span>
 
         <h1>Arunachal Explorer Circuit</h1>
 
-<p>
-Experience the breathtaking beauty of Pasighat,
-Yingkiong, Aalo, Daporijo, Basar and Likabali
-on a 4 Days • 3 Nights adventure through the
-heart of Arunachal Pradesh.
-</p>
+        <p>
+          Experience the breathtaking beauty of Pasighat, Yingkiong, Aalo,
+          Daporijo, Basar and Likabali on a 4 Days • 3 Nights adventure through
+          the heart of Arunachal Pradesh.
+        </p>
 
-        <div className="hero-buttons">
-          <button className="primary-btn">
-            Explore Tours
-          </button>
+        <a href="#destinations">
+          <button className="primary-btn">Explore Tours</button>
+        </a>
 
-          <button className="secondary-btn">
-            Contact Us
-          </button>
-        </div>
+        <a href="#contact">
+          <button className="secondary-btn">Contact Us</button>
+        </a>
       </div>
     </section>
   );
