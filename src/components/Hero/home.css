@@ -82,10 +82,10 @@
   text-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
 
-.hero-content h1 span {
+/* .hero-content h1 span {
   border-right: 3px solid white;
   padding-right: 5px;
-}
+} */
 
 .hero-content p {
   max-width: 750px;
