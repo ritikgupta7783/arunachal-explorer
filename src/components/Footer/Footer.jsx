@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -51,7 +52,8 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            📷 Instagram
+            <FaInstagram className="social-icon instagram" />
+            Instagram
           </a>
 
           <a
@@ -59,7 +61,8 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            📘 Facebook
+            <FaFacebook className="social-icon facebook" />
+            Facebook
           </a>
 
           <a
@@ -67,7 +70,8 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ▶️ YouTube
+            <FaYoutube className="social-icon youtube" />
+            YouTube
           </a>
         </div>
       </div>
