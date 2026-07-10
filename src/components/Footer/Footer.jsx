@@ -38,8 +38,8 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact</h3>
 
-          <p>📞 +91 XXXXX XXXXX</p>
-          <p>📧 travelgo@gmail.com</p>
+          <p>📞 6000817670</p>
+          <p>📧 travelgo206@gmail.com</p>
           <p>📍 Silapathar, Assam</p>
         </div>
 
